@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        /* universal selector */
+        /* 
+        * 
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: lightgray;
+        } */
+
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: lightgray;
+        }
+        .navbar 
+        {
+            width: 100%;
+            height: auto;
+            margin: auto;
+            padding: 10px;
+            background-color: black;
+        }
+        .navbar ul li 
+        {
+            display: inline-block;
+            padding: 2px 20px;
+        }
+        .navbar a 
+        {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        /* pseudo class selector  */
+        .navbar a:hover 
+        {
+        color: red;
+        text-decoration: underline;
+        }
+        .navbar a:link 
+        {
+         color: violet;
+        }
+        .navbar a:visited
+        {
+        color: yellow;
+        }
+        .navbar a:active 
+        {
+         color: green;
+        }
+        form 
+        {
+            width: 50%;
+            height: auto;
+            margin: auto;
+          
+        }
+        fieldset
+        {
+            width: 40%;
+            height: auto;
+            margin: auto;
+            margin-top: 2%;
+            background-color: rgba(2,0,0,0.8);
+            color: white;
+            padding: 10px;
+            border: solid 5px white;
+        }
+        fieldset:hover 
+        {
+            background-color: rgba(2,0,0,0.5);
+        }
+        /* pseudo element selector */
+        input[type="text"],input[type="password"]
+        {
+            width: 250px;
+            height: auto;
+            border: none;
+            background-color:white;
+            border-bottom: solid 2px black;
+            padding: 8px;
+            
+        }
+        input[type="submit"]
+        {
+            width: 150px;
+            height: auto;
+            border: none;
+            padding: 8px;
+            background-color: hotpink;
+            color: white;
+        }
+        input[type="submit"]:hover 
+        {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Aboutus</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">ContactUs</a></li>
+        </ul>
+    </div>
+
+    <fieldset>
+        <legend align="center">Login Form</legend>
+    <form method="post" name="frm" id="frm" action="welcome.html" width="50%" enctype="multipart/form-data">
+        <label>Email *</label>
+        <input type="text" name="email" placeholder="Email *" required>
+        <br><br>
+        <label>Password *</label>
+        <input type="password" name="password" placeholder="Password *" required>
+        <br><br>
+        <input type="submit"  name="log" value="Submit">
+        <br><br>
+    </form>
+    </fieldset>
+    
+</body>
+</html>
