@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+        ul
+        {
+            background-color: black;
+            margin-top: 0;
+            position: sticky;
+            top: 0;
+        }
+        ul li 
+        {
+            display: inline-block;
+            padding: 10px 15px;
+        }
+
+        ul li a 
+        {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover 
+        {
+            color: red;
+        }
+        div 
+        {
+            width: 60%;
+            height: auto;
+            margin-left: 20%;
+            background-color: black;
+            margin-top: 1%;
+        }
+        div p 
+        {
+            color: white;
+            padding:25px;
+            text-align: center;
+        }
+        label 
+        {
+            color: white;
+            padding: 15px;
+        }
+
+        form 
+        {
+            width: 50%;
+            height: auto;
+            margin: auto;
+            padding: 25px;
+        }
+
+        input{
+            width: 300px;
+            height: auto;
+            padding: 8px;
+        }
+
+        input[type="submit"]
+        {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Account</a></li>
+        <li><a href="">Offers</a></li>
+
+    </ul>
+    <!-- div start here -->
+    <div>
+        <p align="center"><span style="color:red; font-size: 25px;">Login</span> <span style="color:green; font-size: 25px;">Form</span> </p>
+
+        <form method="post" id="frm" name="frm" action="" enctype="multipart/form-data">
+            <label>Enter Email *</label>
+            <input type="text" name="email" placeholder="Email *" required>
+            <br><br>
+
+            <label>Enter Password *</label>
+            <input type="password" name="pass" placeholder="Password *" required>
+            <br><br>
+            <label>Enter Phone *</label>
+            <input type="number" name="phone" placeholder="Phone *" required>
+            
+            <br><br>
+            <input type="submit" name="sub" value="Login">
+            <a href="">Forget Password </a>
+            <br><br>
+            <b style="color: white;">Don't have an account ? <a href="register.html">Create Account</a></b>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+body 
+{
+    background-color: yellowgreen;
+}
+h1 
+{
+    font-size: 35px;
+    color: tomato;
+}
+a:hover 
+{
+    transition: 1s ease all;
+    font-size: 48px;
+}

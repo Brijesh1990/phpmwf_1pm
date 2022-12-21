@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            margin: 0;
+            padding: 0;
+            background-color: lightgray;
+        }
+        ul
+        {
+            background-color: black;
+            margin-top: 0;
+            position: sticky;
+            top: 0;
+        }
+        ul li 
+        {
+            display: inline-block;
+            padding: 10px 15px;
+        }
+
+        ul li a 
+        {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover 
+        {
+            color: red;
+        }
+        div 
+        {
+            width: 60%;
+            height: auto;
+            margin-left: 20%;
+            background-color: black;
+            margin-top: 1%;
+        }
+        div p 
+        {
+            color: white;
+            padding:25px;
+            text-align: center;
+        }
+        label 
+        {
+            color: white;
+            padding: 25px;
+        }
+
+        form 
+        {
+            width: 55%;
+            height: auto;
+            margin: auto;
+            padding: 25px;
+        }
+
+        input,select{
+            width: 300px;
+            height: auto;
+            padding: 8px;
+        }
+
+        input[type="submit"]
+        {
+            width: 150px;
+            border: none;
+            background-color: green;
+            color: white;
+        }
+        input[type="reset"]
+        {
+            width: 150px;
+            border: none;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Account</a></li>
+        <li><a href="">Offers</a></li>
+
+    </ul>
+    <!-- div start here -->
+    <div>
+        <p align="center"><span style="color:red; font-size: 25px;">Register</span> <span style="color:green; font-size: 25px;">Form</span> </p>
+
+        <form method="post" id="frm" name="frm" action="" enctype="multipart/form-data">
+            <label>Enter Email *</label>
+            <input type="text" name="email" placeholder="Email *" required>
+            <br><br>
+
+            <label>Enter Password *</label>
+            <input type="password" name="pass" placeholder="Password *" required>
+            <br><br>
+            <label>Confirm Password *</label>
+            <input type="password" name="cpass" placeholder="Confirm Password *" required>
+            <br><br>
+            <label>Enter Phone *</label>
+            <input type="number" name="phone" placeholder="Phone *" required>
+            
+            <br><br>
+            <label>Upload Photo *</label>
+            <input type="file" name="photo" required>
+            <br><br>
+
+            <label>Address *</label>
+            <textarea name="address" required rows="5" cols="28"></textarea>
+            <br><br>
+
+            <label>Gender *</label>
+            <b style="color: white;">Male </b><input type="radio" name="gender" required style="width: auto; height: auto;">  
+            
+            <b style="color: white;">Female </b><input type="radio" name="gender" required style="width: auto; height: auto;">  
+            <br><br>
+
+
+            <label>Hobies *</label>
+            <b style="color: white;">Reading </b><input type="checkbox" name="hobby" required style="width: auto; height: auto;">  
+            
+            <b style="color: white;">Writing </b><input type="checkbox" name="hobby" required style="width: auto; height: auto;"> 
+            
+            <b style="color: white;">Playing </b><input type="checkbox" name="hobby" required style="width: auto; height: auto;"> 
+
+            <b style="color: white;">Cooking</b><input type="checkbox" name="hobby" required style="width: auto; height: auto;"> 
+            <br><br>
+
+
+            <label>Select state *</label>
+            <select name="state" required>
+                <option value="">-select state-</option>
+                <option value="">Gujrat</option>
+            </select>
+            <br><br>
+
+            <label>Select city *</label>
+            <select name="city" required>
+                <option value="">-select city-</option>
+                <option value="">Rajkot</option>
+            </select>
+            <br><br>
+            <input type="submit" name="sub" value="Register">
+            
+            <input type="reset" name="sub" value="Reset">
+            <br><br>
+           <b style="color: white;">Already have an account ? <a href="form.html">Login here </a></b>
+        </form>
+    </div>
+
+</body>
+</html>
